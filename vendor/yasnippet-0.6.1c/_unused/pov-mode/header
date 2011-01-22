@@ -1,0 +1,7 @@
+// Persistence of Vision Ray Tracer Scene Description File
+// File: ${1:name}.pov
+// Vers: 3.6
+// Desc: ${2:description}
+// Date: `(format-time-string "%Y-%m-%d %a")`
+// Auth: Ian Brunton
+

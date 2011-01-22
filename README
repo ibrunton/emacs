@@ -1,0 +1,10 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; The structure of my emacs configuration was inspired by Ryan
+;; McGuire's as of <2011-01-22 Sat>, which he described in his blog
+;; post at
+;; <http://www.enigmacurry.com/2009/01/19/my-emacs-config-on-github/>
+;; and posted to github. I have copied the structure because it is
+;; easier to work with than having one large .emacs file.
+;; Also recommended in that blog post was to place the .emacs.d/
+;; folder under version control; so I created an account on github.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

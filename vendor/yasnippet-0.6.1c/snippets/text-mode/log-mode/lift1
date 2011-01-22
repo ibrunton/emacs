@@ -1,0 +1,9 @@
+#name: Workout plan
+# --
+${1:time}:	2 BCAA, creatine.
+${2:time}:	Warm-up: incline treadmill walk 10:00; dynamic stretching.$T
+${3:time}:	Core: (TWISTING SB PLANK, 1H FARMER WALK) x ${4:60s} * ${5:4} sets.$T
+${6:time}:	25 METHOD FOR SIZE ${7:week}.1$T
+.	CHIN-UP, DIP, DEADLIFT, ST CALF RAISE$Tto ${8:time}.
+.	Stretching$Tto ${9:time}
+pwo

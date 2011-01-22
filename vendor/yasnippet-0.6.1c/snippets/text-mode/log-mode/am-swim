@@ -1,0 +1,6 @@
+#name : Swim before work.
+# --
+${1:0730}:	Swimming: laps, sprints, HIIT; total ${2:1600}m$T to ${3:time}.
+${4:time}:	peanuts + currants + dates + almonds + coconut + flax seed
+.	+ hemp seed + milk; 1 protein + creatine; preparing lunch & Vega;
+.	1 multivitamin, 1 vitamin D, 1 rhodiola to `(format-time-string "%H%M")`.

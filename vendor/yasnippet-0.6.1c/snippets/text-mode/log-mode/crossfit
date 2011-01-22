@@ -1,0 +1,2 @@
+${1:time}:	CrossFit [http://www.crossfit.com/mt-archive2/${2:000000}.html]:$T
+.	${3:20:00} for ${4:rounds}: ( $. )$T
