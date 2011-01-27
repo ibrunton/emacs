@@ -1,5 +1,0 @@
-#name: Breakfast for non-lifting, non-work days (mostly Sundays).
-# --
-Breakfast: 1/2 c OJ; 1/3 c wheat-free granola + peanuts + currants
-	+ dates + coconut + flax seed + hemp seed + milk; 1/2 c cc;
-	1 egg; 1 protein; 1 multivitamin, 1 vitamin D to `(format-time-string "%H%M")`.

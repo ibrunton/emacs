@@ -1,9 +1,0 @@
-#name: Workout plan
-# --
-${1:time}:	2 BCAA, creatine.
-${2:time}:	Warm-up: incline treadmill walk 10:00; dynamic stretching.$T
-${3:time}:	Core: (WEIGHTED PLANK, BIRD-DOG) x ${4:time}.$T
-${5:time}:	25 METHOD FOR SIZE ${6:week}.3$T
-.	FRONT SQUAT, INCL BENCH, WIDE PULL-UP, SKCR, SD CALF RAISE$T to ${7:time}.
-.	Stretching$Tto ${8:time}.
-pwo

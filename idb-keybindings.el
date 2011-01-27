@@ -32,7 +32,7 @@
 (global-set-key [f9] 'log)
 (global-set-key [(shift f9)] 'log-training)
 (global-set-key [f10] 'log-up)
-
+(global-set-key [f11] 'my-datestamp)
 (global-set-key [f12] 'ltime)
 (global-set-key [(shift f12)] 'ltime-round)
 
@@ -42,3 +42,8 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
 (global-set-key "\C-xt" 'insert-tab)
+
+;; Use home/end to go to beginning/end of file, not line;
+;; because ^A/^E are easy to hit but M-<> are not
+(global-set-key [home] 'beginning-of-buffer)
+(global-set-key [end] 'end-of-buffer)

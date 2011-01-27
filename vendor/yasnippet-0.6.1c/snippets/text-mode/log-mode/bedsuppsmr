@@ -1,1 +1,0 @@
-${1:2200}:	`(caddr (insert-file-contents-literally "~/docs/log/.snippets/bedsuppsmr"))`

@@ -1,7 +1,0 @@
-${1:1200}:	2 BCAA.
-${2:1200}:	Skating$T to ${3:1300}.
-${4:1310}:	Vega, 2 BCAA, creatine.
-${5:1320}:	Core: BACK XT, (PLANK, SIDE-PLANK).$T
-${6:time}:	DB ROWS, FRONT SQUATS, SD CALF RAISES$T to ${7:time}.
-	Stretching$T to ${8:time}.
-pwo

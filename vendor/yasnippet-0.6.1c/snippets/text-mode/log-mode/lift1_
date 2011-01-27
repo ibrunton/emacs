@@ -1,8 +1,0 @@
-#name: Workout plan
-# --
-${1:time}:	2 BCAA, creatine.
-${2:time}:	Warm-up: incline treadmill walk 10:00; dynamic stretching.$T
-${3:time}:	Core: (RENEGADE ROW, TWISTING CRUNCH, BUMP-PLANK) x ${4:10} X ${5:4} sets.$T
-${6:time}:	VELOCITY, INTERMEDIATE ${7:week}.1 (20 reps x 4-5RM, 30s rest)$T
-|	FRONT SQUAT, CHIN-UP, DB BENCH PRESS, BAR ROLLOUT$Tto ${8:time}.
-${9:time}:	glutamine + creatine; 1/2 malto + 2 protein + cinnamon; 2 BCAA.
