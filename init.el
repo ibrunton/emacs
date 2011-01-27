@@ -42,6 +42,10 @@
 
 (require 'mu)
 
+(require 'vc-git)
+(load "/usr/share/emacs/site-lisp/git.el")
+(load "/usr/share/emacs/site-lisp/git-blame.el")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; customised libraries
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
