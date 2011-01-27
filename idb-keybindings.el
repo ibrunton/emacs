@@ -24,15 +24,17 @@
 (global-set-key [(shift f4)] 'wrap-all-lines)
 
 (global-set-key [f5] 'initel)
-(global-set-key [f6] 'edit-log-mode)
+;;(global-set-key [f6] 'edit-log-mode)
 (global-set-key [f7] 'eval-buffer)
 (global-set-key [(shift f7)] 'eval-region)
-
+(global-set-key [f8] 'turn-on-auto-fill)
+(global-set-key [(shift f8)] 'turn-off-auto-fill)
 
 (global-set-key [f9] 'log)
 (global-set-key [(shift f9)] 'log-training)
-(global-set-key [f10] 'log-up)
+;;(global-set-key [f10] 'log-up)
 (global-set-key [f11] 'my-datestamp)
+(global-set-key [(shift f11)] 'my-long-date)
 (global-set-key [f12] 'ltime)
 (global-set-key [(shift f12)] 'ltime-round)
 

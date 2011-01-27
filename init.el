@@ -59,6 +59,9 @@
 ;; Python mode, Pymacs, Ropemacs:
 (load-library "idb-python")
 
+;; LaTeX mode:
+(load-library "idb-latex")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; CUSTOM
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
