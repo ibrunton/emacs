@@ -49,3 +49,8 @@
 ;; because ^A/^E are easy to hit but M-<> are not
 (global-set-key [home] 'beginning-of-buffer)
 (global-set-key [end] 'end-of-buffer)
+
+;; copy-and-paste to/from system clipboard <2011-01-29 Sat>
+(global-set-key [(shift delete)] 'clipboard-kill-region)
+(global-set-key [(control insert)] 'clipboard-kill-ring-save)
+(global-set-key [(shift insert)] 'clipboard-yank)
