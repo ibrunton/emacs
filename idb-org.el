@@ -36,6 +36,7 @@
 
 (define-key global-map [(shift f8)] 'remember)
 (global-set-key [(control meta ?r)] 'remember)
+(global-set-key "\M-R" 'remember)
 
 ;; These Org/Remember settings changed from custom-set-variables to setq
 ;; 2010-01-13
