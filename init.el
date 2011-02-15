@@ -65,6 +65,9 @@
 ;; Wanderlust:
 (load-library "idb-wl")
 
+;; ljupdate:
+(load-library "idb-ljupdate")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; CUSTOM
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -76,7 +79,9 @@
  '(delete-selection-mode nil)
  '(face-font-family-alternatives (quote (("courier" "fixed") ("courier" "CMU Typewriter Text" "fixed") ("Sans Serif" "helv" "helvetica" "arial" "fixed") ("helv" "helvetica" "arial" "fixed"))))
  '(lj-default-username "wolfshift")
+ '(lj-fill-function (quote ignore))
  '(mark-even-if-inactive t)
+ '(message-directory "~/.ljdrafts/")
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))
 

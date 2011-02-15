@@ -26,7 +26,7 @@
     (insert (format-time-string "%H%M")))
 
 (defun ltime-round () ;; modified <2010-05-20 Thu>
-  "Insert time for log (no colon) rounded to nearest 5 minutes."
+  "Format time for log (no colon) rounded to nearest 5 minutes."
   (interactive)
   (setq thisminute (string-to-number (format-time-string "%M")))
   (setq rounded-time (cond ((= 0 (% thisminute 5)) (string-to-number (format-time-string "%H%M")))
@@ -34,10 +34,14 @@
 			   ((= 2 (% thisminute 5)) (fts-by-minutes -2))
 			   ((= 3 (% thisminute 5)) (fts-by-minutes 2))
 			   ((= 4 (% thisminute 5)) (fts-by-minutes 1))))
-  (setq rounded-time (if (< rounded-time 1000)
-			 (concat "0" (number-to-string rounded-time))
-		       (number-to-string rounded-time)))
-  (insert rounded-time))
+  (if (< rounded-time 1000)
+      (concat "0" (number-to-string rounded-time))
+    (number-to-string rounded-time)))
+
+(defun insert-ltime-round ()
+  "Insert time string from ltime-round()."
+  (interactive)
+  (insert (ltime-round)))
 
 (defun fts-by-minutes (ftsbm-int) ;; <2010-05-20 Thu>
   "Adjusts minute by integer passed."

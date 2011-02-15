@@ -336,9 +336,10 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 				(format-time-string "%Y/%m/%d")))
     (insert (format-time-string "%A, %d %B, %Y")))
   (insert (concat "\n\n;;\t"
-		  (format-time-string "%H%M")
+		  ;;(format-time-string "%H%M")
+		  (ltime-round)
 		  "\t------------------------------------------------------\n"))
-  (setq auto-fill-mode t))
+  (auto-fill-mode))
 
 (defun log-show-month () ;;<2010-03-24 Wed>
   "Outputs a whole month's logs in a new buffer."
