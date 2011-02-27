@@ -38,6 +38,10 @@
 
 (require 'log-mode)
 
+(require 'tumble)
+
+(require 'mu)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; customised libraries
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,7 +67,7 @@
 (load-library "idb-latex")
 
 ;; Wanderlust:
-(load-library "idb-wl")
+;;(load-library "idb-wl")
 
 ;; ljupdate:
 (load-library "idb-ljupdate")
@@ -81,7 +85,8 @@
  '(lj-default-username "wolfshift")
  '(lj-fill-function (quote ignore))
  '(mark-even-if-inactive t)
- '(message-directory "~/.ljdrafts/")
+ '(message-directory "~/.ljdrafts/" t)
+ '(mu-worlds (quote (["FurryMuck" "muck.furry.com" 8888 "guest" "guest"])))
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))
 

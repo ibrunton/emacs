@@ -6,4 +6,4 @@
 ;; the princess is in another castle:
 (add-to-list 'load-path "~/.userdata")
 ;;Load the password file but don't complain if it doesn't exist
-(load "passwords" 'noerror)
+(load "passwords.el.gpg" 'noerror)

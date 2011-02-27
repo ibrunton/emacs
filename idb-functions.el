@@ -242,3 +242,15 @@ until I figure out how to prevent it from requiring them in the first place."
 ;;   (interactive)
 ;;   (find-file "~/.emacs.d/pov-mode-3.2/pov-mode.el"))
 
+;; <2011-02-26 Sat>
+(defun prewrap-region (min max)
+  "Wrap the region in an HTML <pre></pre> tag."
+  (interactive "r")
+  (goto-char min)
+  (insert "<pre>")
+  (goto-char (+ max 6))
+  (insert "</pre>"))
+
+(defun sig () ;; <2011-02-27 Sun>
+  (interactive)
+  (find-file "~/.signature"))

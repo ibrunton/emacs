@@ -19,6 +19,8 @@
 (make-face 'log-mode-diet-face)
 (set-face-attribute 'log-mode-diet-face nil :foreground "black" :weight 'bold)
 (set-face-attribute 'log-mode-diet-face nil :background "firebrick")
+(make-face 'log-mode-ddiet-face)
+(set-face-attribute 'log-mode-ddiet-face nil :foreground "firebrick")
 (make-face 'log-mode-jo-face)
 (set-face-attribute 'log-mode-jo-face nil :foreground "DarkOrchid" :weight 'bold)
 (make-face 'log-mode-time-face)
@@ -40,12 +42,12 @@
   '(;"Weight" "Breakfast"
     "Nap" "Work" "XXXX" ;"Walk" "Plug" "chastity device"
     "Itchy Belly Spot" "Itchy Spot"
-    "greens+" "Coffee" "Tribex"
-    "Doug" "Andrechek"
+;;    "greens+" "Coffee" "Tribex"
+;;    "Doug" "Andrechek"
     "Mike" "Mikey" "Butler"
     ;; Islamic prayers:
     "Fajr" "Dhuhr" "Asr" "Maghrib" "Isha" "Witr" "Qunut" "Tasbih" "Salat"
-    "Rosary"
+    "Dhikr"
     "Meditation"
     ;; games
     "AssaultCube" "Half-Life 2" "Portal" "H.A.W.X." "Chrome"
@@ -70,6 +72,9 @@
     ("\\(\\$d\\)\\(.*?\\)\\(\\$\\)" (1 'log-mode-bob-face)
      (2 'log-mode-diet-face)
      (3 'log-mode-bob-face))
+    ("\\(\\$e\\)\\(.*?\\)\\(\\$\\)" (1 'log-mode-bob-face)
+     (2 'log-mode-ddiet-face)
+     (3 'log-mode-bob-face))
     ("\\(\\$[xo]\\)\\(.*?\\)\\(\\$\\)" (1 'log-mode-bob-face)
      (2 'log-mode-jo-face)
      (3 'log-mode-bob-face))
@@ -80,9 +85,9 @@
     ("<[0-9]\\{4\\}\\-[01][0-9]\\-[0123][0-9] [SMTWF][ouehra][neduit]>" . 'log-mode-timestamp-face)
     ("\\([0-9]\\{4\\}\\)" (1 'log-mode-time-face))
 ;; Add /italic/, _underline_, *bold*
-    ("\\(/[a-zA-Z0-9 ]+/\\)" (1 'italic))
-    ("\\(_[a-zA-Z0-9/ ]+_\\)" (1 'underline))
-    ("\\(\\*[a-zA-Z0-9/ ]+\\*\\)" (1 'bold))
+    ("\\(/[-a-zA-Z0-9 ]+/\\)" (1 'italic))
+    ("\\(_[-a-zA-Z0-9/ ]+_\\)" (1 'underline))
+    ("\\(\\*[-a-zA-Z0-9/ ]+\\*\\)" (1 'bold))
     ("\\(> .*\\)" (1 'log-mode-note-face))
     ) ; face regexps
   '("/docs/log/") ; auto-mode
