@@ -28,6 +28,7 @@
 (global-set-key [f7] 'eval-buffer)
 (global-set-key [(shift f7)] 'eval-region)
 (global-set-key [f8] 'auto-fill-mode) ;; toggles on/off
+(global-set-key [(shift f8)] 'unfill-paragraph)
 
 (global-set-key [f9] 'log)
 (global-set-key [(shift f9)] 'log-training)

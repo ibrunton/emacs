@@ -85,7 +85,7 @@
  '(lj-default-username "wolfshift")
  '(lj-fill-function (quote ignore))
  '(mark-even-if-inactive t)
- '(message-directory "~/.ljdrafts/" t)
+ '(message-directory "~/.ljdrafts/")
  '(mu-worlds (quote (["FurryMuck" "muck.furry.com" 8888 "guest" "guest"])))
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))

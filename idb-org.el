@@ -66,6 +66,7 @@
 (setq org-agenda-skip-deadline-if-done t)
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-start-on-weekday nil)
+(setq org-agenda-window-setup (quote current-window))
 (setq org-deadline-warning-days 14)
 (setq org-default-notes-file "~/org/notes.org")
 (setq org-fast-tag-selection-single-key (quote expert))
