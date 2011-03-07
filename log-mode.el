@@ -343,7 +343,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
   (insert (concat "\n\n;;\t"
 		  ;;(format-time-string "%H%M")
 		  (ltime-round)
-		  "\t------------------------------------------------------\n"))
+		  "\t------------------------------------------------------\n\n"))
   (auto-fill-mode))
 
 (defun log-show-month () ;;<2010-03-24 Wed>

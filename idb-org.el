@@ -34,7 +34,7 @@
 
 (add-hook 'remember-mode-hook 'org-remember-apply-template)
 
-(define-key global-map [(shift f8)] 'remember)
+;;(define-key global-map [(shift f8)] 'remember)
 (global-set-key [(control meta ?r)] 'remember)
 (global-set-key "\M-R" 'remember)
 
@@ -60,7 +60,7 @@
 			     (quote regexp) "<[^>\n]+>")))
 			 (org-agenda-overriding-header "Unscheduled TODO entries: "))))))
 
-(setq org-agenda-files (quote ("~/docs/org/todo.org" "~/docs/org/groceries.org" "~/docs/org/birthdays.org")))
+(setq org-agenda-files (quote ("~/docs/org/todo.org")))
 (setq org-agenda-ndays 7)
 (setq org-agenda-show-all-dates t)
 (setq org-agenda-skip-deadline-if-done t)
@@ -76,12 +76,11 @@
        (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n  %u" "~/docs/org/todo.org" "Tasks")
 	("Appointments" ?a "* %?\n %u" "~/docs/org/todo.org" "Appointments")
 	("Note" ?n "* %u %?" "~/docs/org/notes.org" "Notes")
-	("Journal" ?j "* %^{Head Line} %U %^g\n%i%?" "~/docs/org/journal.org")
+;;	("Journal" ?j "* %^{Head Line} %U %^g\n%i%?" "~/docs/org/journal.org")
 	("Reading" ?r "* %^{Title} %t%?" "~/docs/org/reading.org" "Reading")
 ;;	("Email" ?e "* TODO %^{Email} :email:\n  SCHEDULED: %t" "~/docs/org/todo.org" "Email")
 ;;	("Call" ?c "* TODO %^{Call} :call:\n  SCHEDULED: %t" "~/docs/org/todo.org" "Call")
-	("Birthday" ?b "* %^{Name} :birthday:\n  SCHEDULED: %t%? " "~/docs/org/birthdays.org" "Birthdays")
-	("Groceries" ?g "* TODO %? :groceries:\n  SCHEDULED: %t" "~/docs/org/groceries.org" "Groceries")
+	("Birthday" ?b "* %^{Name} :birthday:\n  SCHEDULED: %t%? " "~/docs/org/todo.org" "Birthdays")
 	("Movies" ?m "* %^{Title} %t%?" "~/docs/org/movies.org" "Movies")
 	)))
 

@@ -46,6 +46,8 @@
 (load "/usr/share/emacs/site-lisp/git.el")
 (load "/usr/share/emacs/site-lisp/git-blame.el")
 
+(require 'lagn)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; customised libraries
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
