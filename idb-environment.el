@@ -63,7 +63,7 @@
 ;; set window width
 (defun set-frame-size ()
   (interactive)
-  (add-to-list 'default-frame-alist (cons 'width 100)))
+  (add-to-list 'default-frame-alist (cons 'width 90)))
 (set-frame-size)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
