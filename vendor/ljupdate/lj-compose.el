@@ -314,6 +314,9 @@ in `html-mode'.")
 (define-key lj-compose-header-mode-map (kbd "C-c C-c") 'lj-compose-submit-then-exit)
 (define-key lj-compose-body-mode-map (kbd "C-c C-c") 'lj-compose-submit-then-exit)
 
+;; added <2011-03-08 Tue> by Ian Brunton:
+(define-key lj-compose-header-mode-map (kbd "C-c C-m") 'lagn-insert-now-playing)
+(define-key lj-compose-header-mode-map (kbd "C-c m") 'lagn-insert-now-playing)
 ;; (define-key lj-compose-body-mode-map (kbd "C-c <TAB>") 'lj-complete-body)
 
 ;; Ensure that unwanted Message bindings get shadowed.
@@ -379,6 +382,7 @@ in `html-mode'.")
           "Community: " (or (gethash :community values) "") "\n"
           "Mood: " (or (gethash :mood values) "") "\n"
 	  "Music: " (or (gethash :music values) "") "\n"
+;;	  "Music: " (lagn-insert-now-playing) "\n"
           "Location: " (or (gethash :location values) "") "\n"
           "Picture: " (or (gethash :picture values) "") "\n"
           "Access: " (or (gethash :access values) "public") "\n"

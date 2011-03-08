@@ -92,6 +92,8 @@ nil mean that there is noconnection or there was an error")
 (defvar lagn-process-queue ()
   "tq queue for lagn")
 
+(defvar lagn-export-string nil)
+
 
 ;;; some function to read anwser from nyxmms2
 
@@ -115,6 +117,8 @@ nil mean that there is noconnection or there was an error")
       (when (search-forward-regexp "] artist = \\([^\n]+\\)$" () t)
 	(setq artist (match-string 1)))
       (setq result (list id artist album title url))
+      (setq lagn-artist artist)
+      (setq lagn-title title)
       (puthash id result lagn-info-cache)
       result)))
 
@@ -216,13 +220,24 @@ nil mean that there is noconnection or there was an error")
     ((string= (match-string 1 response) "Stopped")
      (setq lagn-status 'stopped)))
   (lagn-update-playlist-status)
-  (unless noshow (message response)))
+  (unless noshow (insert (message response))))
 
 (defun lagn-status (&optional noshow)
   (interactive)
   (lagn-call `(lagn-callback-status ,noshow) "status")
-  (lagn-call '(lagn-callback-current-info) "info"))
+  (lagn-call '(lagn-callback-current-info) "info")
+  (lagn-set-now-playing lagn-now-playing)
+)  
 
+(defun lagn-set-now-playing (song)
+  (interactive)
+  (setq lagn-export-string
+	(concat lagn-artist " - " lagn-title)))
+
+(defun lagn-insert-now-playing ()
+  (interactive)
+  (lagn-status)
+  (insert lagn-export-string))
 
 (defun lagn-song-string (song)
   (if (listp (cdr song))
