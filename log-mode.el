@@ -87,7 +87,7 @@
 ;; Add /italic/, _underline_, *bold*
     ("\\(/[-a-zA-Z0-9 ]+/\\)" (1 'italic))
     ("\\(_[-a-zA-Z0-9/ ]+_\\)" (1 'underline))
-    ("\\(\\*[-a-zA-Z0-9/ ]+\\*\\)" (1 'bold))
+    ("\\(\\*[-a-zA-Z0-9/]+\\*\\)" (1 'bold))
     ("\\(> .*\\)" (1 'log-mode-note-face))
     ) ; face regexps
   '("/docs/log/") ; auto-mode

@@ -43,7 +43,7 @@
 (defvar lj-fill-by-paragraph-fill-column 10000
   "*Value to be used for `fill-column' by `lj-fill-by-paragraph'.")
 
-(defvar lj-fill-flush-empty-lines-flag t
+(defvar lj-fill-flush-empty-lines-flag nil
   "*Non-nil means that `lj-fill-by-paragraph' will remove blank lines.")
 
 (defvar lj-fill-inter-paragraph-newline-count 2

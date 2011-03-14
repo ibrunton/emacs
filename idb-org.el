@@ -76,6 +76,8 @@
        (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n  %u" "~/docs/org/todo.org" "Tasks")
 	("Appointments" ?a "* %?\n %u" "~/docs/org/todo.org" "Appointments")
 	("Note" ?n "* %u %?" "~/docs/org/notes.org" "Notes")
+	("Finances" ?f "%t %?" "~/docs/org/bank.org")
+;;	("Bookmark" ?k "* %(insert(buffer-file-name (current-buffer)))%!" "~/docs/org/bookmarks.org" "Bookmarks")
 ;;	("Journal" ?j "* %^{Head Line} %U %^g\n%i%?" "~/docs/org/journal.org")
 	("Reading" ?r "* %^{Title} %t%?" "~/docs/org/reading.org" "Reading")
 ;;	("Email" ?e "* TODO %^{Email} :email:\n  SCHEDULED: %t" "~/docs/org/todo.org" "Email")
