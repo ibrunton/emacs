@@ -40,11 +40,11 @@
 
 (require 'tumble)
 
-(require 'mu)
+;;(require 'mu)
 
-(require 'vc-git)
-(load "/usr/share/emacs/site-lisp/git.el")
-(load "/usr/share/emacs/site-lisp/git-blame.el")
+;;(require 'vc-git)
+;;(load "/usr/share/emacs/site-lisp/git.el")
+;;(load "/usr/share/emacs/site-lisp/git-blame.el")
 
 (require 'lagn)
 
@@ -67,7 +67,7 @@
 (load-library "idb-recentf")
 
 ;; Python mode, Pymacs, Ropemacs:
-(load-library "idb-python")
+;;(load-library "idb-python")
 
 ;; LaTeX mode:
 (load-library "idb-latex")
@@ -98,7 +98,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "LightGray" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "monotype" :family "Courier New"))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "LightGray" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Courier 10 Pitch"))))
  '(font-lock-comment-face ((t (:foreground "#ff8c00" :slant italic)))))
 
 

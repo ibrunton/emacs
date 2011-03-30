@@ -104,7 +104,7 @@ Make directories as needed.
 If file is already open in a buffer, switch to that buffer.
 If passed &optional nogotoend, do not move point to the end of the file. Otherwise, do."
   (interactive)
-  (setq log-dir (concat idb-root-dir "docs/log/"
+  (setq log-dir (concat idb-root-dir "Dropbox/docs/log/"
 			 (format-time-string "%Y/%m/")))
   (setq log-file (concat log-dir (format-time-string "%d")))
 
@@ -216,7 +216,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-training ()
   "Open today's training log file. If file does not exist, insert snippet to expand."
   (interactive)
-  (setq training-dir (concat idb-root-dir "docs/log/"
+  (setq training-dir (concat idb-root-dir "Dropbox/docs/log/"
 		     (format-time-string "%Y/%m/")))
   (setq training-file (concat training-dir
 			      (format-time-string "%d")
@@ -225,7 +225,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
   (unless (file-exists-p training-file)
       (insert (concat (format-time-string "%A, %d %B, %Y") "\n\ntraining"))
       (append-to-file ";;\tTRAINING FILE CREATED -------------------------------------\n"
-		      nil (concat idb-root-dir "docs/log/"
+		      nil (concat idb-root-dir "Dropbox/docs/log/"
 				  (format-time-string "%Y/%m/%d")))
 
       (make-directory training-dir t)))
@@ -233,17 +233,17 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-last-week () ;; 2010-02-01 Mon
   "Open log file from 1 week ago today."
   (interactive)
-  (find-file (concat idb-root-dir "docs/log/" (log-backward-x-days 7))))
+  (find-file (concat idb-root-dir "Dropbox/docs/log/" (log-backward-x-days 7))))
 
 (defun log-training-last-week () ;; 2010-02-01 Mon
   "Open training log file from 1 week ago today."
   (interactive)
-  (find-file (concat idb-root-dir "docs/log/" (log-backward-x-days 7) ".training")))
+  (find-file (concat idb-root-dir "Dropbox/docs/log/" (log-backward-x-days 7) ".training")))
 
 (defun log-yest ()
   "Open yesterday's log file."
   (interactive)
-  (find-file (concat idb-root-dir "docs/log/" (log-backward-x-days 1))))
+  (find-file (concat idb-root-dir "dropbox/docs/log/" (log-backward-x-days 1))))
 
 (defun log-backward-x-days (lbxd-int);; 2010-03-17 Wed
   "Return x days backward from today."
@@ -258,20 +258,20 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-insert-plan (&optional noclear)
   (interactive)
   (log)
-  (setq plan-file (concat idb-root-dir "docs/log/" (format-time-string "%Y/%m/%d")
+  (setq plan-file (concat idb-root-dir "Dropbox/docs/log/" (format-time-string "%Y/%m/%d")
 			  ".plan"))
   (insert-file-contents plan-file)
   (unless noclear (log-clear-plan)))
 
 (defun log-clear-plan ()
   (interactive)
-  (setq plan-file (concat idb-root-dir"/docs/log/" (format-time-string "%Y/%m/%d")
+  (setq plan-file (concat idb-root-dir"Dropbox/docs/log/" (format-time-string "%Y/%m/%d")
 			  ".plan"))
   (delete-file plan-file))
 
 (defun log-set-plan ()
  (interactive)
- (setq plan-file (concat idb-root-dir "docs/log/"
+ (setq plan-file (concat idb-root-dir "Dropbox/docs/log/"
 			 ;; FIXME: change this to like what log-last-week uses
 			 ;; so it will work across month boundaries:
 			 (format-time-string "%Y/%m/")
@@ -283,21 +283,21 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 ;; same, for workouts (today, not tomorrow)
 (defun log-set-workout-plan ()
  (interactive)
- (setq lw-plan-file (concat idb-root-dir "docs/log/" (format-time-string "%Y/%m/%d")
+ (setq lw-plan-file (concat idb-root-dir "Dropbox/docs/log/" (format-time-string "%Y/%m/%d")
 			     ".workout-plan"))
  (find-file lw-plan-file))
 
 (defun log-insert-workout-plan ()
   (interactive)
   (log)
-  (setq lw-plan-file (concat idb-root-dir "docs/log/" (format-time-string "%Y/%m/%d")
+  (setq lw-plan-file (concat idb-root-dir "Dropbox/docs/log/" (format-time-string "%Y/%m/%d")
 			     ".workout-plan"))
   (insert-file-contents lw-plan-file)
   (log-clear-workout-plan))
 
 (defun log-clear-workout-plan ()
   (interactive)
-  (setq lw-plan-file (concat idb-root-dir "docs/log/" (format-time-string "%Y/%m/%d")
+  (setq lw-plan-file (concat idb-root-dir "Dropbox/docs/log/" (format-time-string "%Y/%m/%d")
 			     ".workout-plan"))
   (delete-file lw-plan-file))
 
@@ -314,9 +314,9 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
   "Adds weight measurement to log file, and appends date and weight to weight file."
   (interactive "sWeight: ")
   (log)
-  (insert (concat "Weight:\t" lw-w ".\n"))
+  (insert (concat "Weight:\t" lw-w "\n"))
   (save-buffer) ;; log buffer
-  (setq weight-file (concat idb-root-dir "docs/log/"
+  (setq weight-file (concat idb-root-dir "Dropbox/docs/log/"
 			    (format-time-string "%Y/%m")
 			    "/weight"))
   (append-to-file (concat (format-time-string "%Y-%m-%d")
@@ -330,14 +330,14 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-journal () ;; 2010-02-28 Sun
   "Creates a file for longer journal entries alongside log file."
   (interactive)
-  (setq log-journal-file (concat idb-root-dir "docs/log/"
+  (setq log-journal-file (concat idb-root-dir "Dropbox/docs/log/"
 				 (format-time-string "%Y/%m/%d")
 				 ".journal"))
   (find-file log-journal-file)
   (goto-char (point-max))
   (unless (file-exists-p log-journal-file)
     (append-to-file ";;\tJOURNAL FILE CREATED --------------------------------------\n"
-		    nil (concat idb-root-dir "docs/log/"
+		    nil (concat idb-root-dir "Dropbox/docs/log/"
 				(format-time-string "%Y/%m/%d")))
     (insert (format-time-string "%A, %d %B, %Y")))
   (insert (concat "\n\n;;\t"
@@ -349,7 +349,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-show-month () ;;<2010-03-24 Wed>
   "Outputs a whole month's logs in a new buffer."
   (interactive)
-  (setq month-path (concat idb-root-dir "docs/log/"
+  (setq month-path (concat idb-root-dir "Dropbox/docs/log/"
 			   (log-show-month-get-month)))
   (cd month-path)
   (switch-to-buffer (generate-new-buffer (concat "Month-" (format-time-string "%Y-%m"))))
@@ -365,7 +365,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-show-month-journal () ;;<2010-04-17 Sat>
   "Outputs a whole month's JOURNAL logs in a new buffer."
   (interactive)
-  (setq month-path (concat idb-root-dir "docs/log/"
+  (setq month-path (concat idb-root-dir "Dropbox/docs/log/"
 			   (log-show-month-get-month)))
   (cd month-path)
   (switch-to-buffer (generate-new-buffer (concat "Month-" (format-time-string "%Y-%m"))))
@@ -381,7 +381,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-show-month-training () ;;<2010-04-17 Sat>
   "Outputs a whole month's TRAINING logs in a new buffer."
   (interactive)
-  (setq month-path (concat idb-root-dir "docs/log/"
+  (setq month-path (concat idb-root-dir "Dropbox/docs/log/"
 			   (log-show-month-get-month)))
   (cd month-path)
   (switch-to-buffer (generate-new-buffer (concat "Month-" (format-time-string "%Y-%m"))))
