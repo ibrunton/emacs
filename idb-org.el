@@ -69,6 +69,7 @@
 (setq org-agenda-window-setup (quote current-window))
 (setq org-deadline-warning-days 14)
 (setq org-default-notes-file "~/Dropbox/docs/org/notes.org")
+(setq org-directory "~/Dropbox/docs/org/")
 (setq org-fast-tag-selection-single-key (quote expert))
 (setq org-remember-store-without-prompt t)
 (setq org-remember-templates

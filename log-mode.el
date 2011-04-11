@@ -243,7 +243,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
 (defun log-yest ()
   "Open yesterday's log file."
   (interactive)
-  (find-file (concat idb-root-dir "dropbox/docs/log/" (log-backward-x-days 1))))
+  (find-file (concat idb-root-dir "Dropbox/docs/log/" (log-backward-x-days 1))))
 
 (defun log-backward-x-days (lbxd-int);; 2010-03-17 Wed
   "Return x days backward from today."

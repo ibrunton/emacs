@@ -136,12 +136,12 @@
 (defun my-reading-log ()
   "Open the reading record file"
   (interactive)
-  (find-file "~/docs/org/reading.org"))
+  (find-file "~/Dropbox/docs/org/reading.org"))
 
 (defun my-clear-reading-log () ;;<2010-06-09 Wed>
   "Backs up and then clears the reading record file."
   (interactive)
-  (rename-file "~/docs/org/reading.org"
+  (rename-file "~/Dropbox/docs/org/reading.org"
 	       (concat "~/docs/org/reading-"
 		       (format-time-string "%Y-%m-%d")
 		       ".org"))
