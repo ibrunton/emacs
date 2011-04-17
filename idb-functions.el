@@ -261,3 +261,11 @@ until I figure out how to prevent it from requiring them in the first place."
   (interactive)
   (let ((fill-column (point-max)))
     (fill-paragraph nil)))
+
+;; <2011-04-17 Sun>
+(defun writing-buffer ()
+  (interactive)
+  (switch-to-buffer (get-buffer-create "new"))
+  (insert "-*- mode: org; mode: auto-fill; -*-\n\n")
+  (org-mode)
+  (auto-fill-mode))
