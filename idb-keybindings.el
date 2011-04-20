@@ -20,8 +20,9 @@
 (global-set-key [f2] 'comment-region)
 (global-set-key [(shift f2)] 'uncomment-region)
 (global-set-key [f3] 'multi-term)
-;;(global-set-key [f4] 'multi-term)
-(global-set-key [(shift f4)] 'wrap-all-lines)
+(global-set-key [f4] 'writing-buffer)
+(global-set-key [(shift f4)] 'org2blog/wp-new-entry)
+;;(global-set-key [(shift f4)] 'wrap-all-lines)
 
 (global-set-key [f5] 'initel)
 ;;(global-set-key [f6] 'edit-log-mode)

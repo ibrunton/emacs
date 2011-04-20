@@ -6,6 +6,7 @@
 
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
+(setq multi-term-buffer-name "terminal")
 
 ;; (defun djcb-term-start-or-switch (prg &optional use-existing)
 ;;   "* run program PRG in a terminal buffer. If USE-EXISTING is non-nil "
