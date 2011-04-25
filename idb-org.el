@@ -77,7 +77,6 @@
        (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n  %u" "~/Dropbox/docs/org/todo.org" "Tasks")
 	("Appointments" ?a "* %?\n %u" "~/Dropbox/docs/org/todo.org" "Appointments")
 	("Note" ?n "* %u %?" "~/Dropbox/docs/org/notes.org" "Notes")
-	("Finances" ?f "%t %^{Type(DC,PP,Cash,Dep,XF)} | %^{Amount} | %^{Vendor} | %^{Memo}%?" "~/Dropbox/docs/org/bank.org")
 ;;	("Bookmark" ?k "* %(insert(buffer-file-name (current-buffer)))%!" "~/Dropbox/docs/org/bookmarks.org" "Bookmarks")
 ;;	("Journal" ?j "* %^{Head Line} %U %^g\n%i%?" "~/Dropbox/docs/org/journal.org")
 	("Reading" ?r "* %^{Title} %t%?" "~/Dropbox/docs/org/reading.org" "Reading")

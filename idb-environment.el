@@ -15,7 +15,7 @@
 ;; highlight incremental search
 (setq search-highlight t)               
 
-;; Show matching parenthesis. How can you live without it.
+;; Show matching parenthesis.
 (show-paren-mode t)
 
 ;; Dont show the GNU splash screen
@@ -35,6 +35,7 @@
 
 ;; Current line and column number in mode line
 (global-linum-mode t)
+(setq linum-format "%d ")
 (setq column-number-mode t)
 
 ;; Don't wrap long lines
@@ -53,6 +54,9 @@
 ;; font lock
 (global-font-lock-mode t)
 
+;; bookmarks
+(setq bookmark-default-file "~/.emacs.d/bookmarks"
+      bookmark-save-flag 1)
 
 ;; don't auto add final newline:
 (setq-default require-final-newline nil)
@@ -61,10 +65,10 @@
 (put 'erase-buffer 'disabled nil)
 
 ;; set window width
-(defun set-frame-size ()
-  (interactive)
-  (add-to-list 'default-frame-alist (cons 'width 90)))
-(set-frame-size)
+;; (defun set-frame-size ()
+;;   (interactive)
+;;   (add-to-list 'default-frame-alist (cons 'width 90)))
+;; (set-frame-size)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Cursor
