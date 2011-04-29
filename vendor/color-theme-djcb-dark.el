@@ -4,7 +4,7 @@
   (color-theme-install
     '(color-theme-djcb-dark
        ((foreground-color . "LightGray");;"#a9eadf")
-         (background-color . "black") 
+;;         (background-color . "black") 
          (background-mode . dark))
        (bold ((t (:bold t))))
        (bold-italic ((t (:italic t :bold t))))
@@ -17,7 +17,7 @@
        (font-lock-doc-string-face ((t (:foreground "#3041c4"))))
        (font-lock-doc-face ((t (:foreground "gray"))))
        (font-lock-reference-face ((t (:foreground "white"))))
-       (font-lock-function-name-face ((t (:foreground "#356da0"))))
+       (font-lock-function-name-face ((t (:foreground "#578fc2"))));356da0"))))
        (font-lock-keyword-face ((t (:bold t :foreground "#bcf0f1"))))
        (font-lock-preprocessor-face ((t (:foreground "#e3ea94"))))
        (font-lock-string-face ((t (:foreground "#ffffff"))))
