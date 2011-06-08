@@ -4,7 +4,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; start at home
-(cd "~")
+;;(cd "~")
 
 ;; a few functions use this
 (setq idb-root-dir "~/")
@@ -47,6 +47,7 @@
 ;; No menu bar or toolbar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; titlebar = buffer unless filename
 (setq frame-title-format '(buffer-file-name "%f" ("%b")))
@@ -65,11 +66,12 @@
 (put 'erase-buffer 'disabled nil)
 
 ;; set window width
-;; (defun set-frame-size ()
-;;   (interactive)
-;;   (add-to-list 'default-frame-alist (cons 'width 90)))
-;; (set-frame-size)
+(defun set-frame-size ()
+  (interactive)
+  (add-to-list 'default-frame-alist (cons 'width 82)))
+(set-frame-size)
 
+;;(add-to-list 'default-frame-alist (cons 'font "Courier New"))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Cursor
 ;; copied from http://emacs-fu.blogspot.com/2009/12/changing-cursor-color-and-shape.html
@@ -109,3 +111,15 @@
 (require 'color-theme)
 (load "color-theme-djcb-dark")
 (color-theme-djcb-dark)
+
+;; (defmacro save-font-excursion (face &rest body)
+;;   "Save the :font property of given FACE during the execution of BODY."
+;;   (declare (indent 1) (debug t))
+;;   `(let ((oldfont (face-attribute ,face :font)) ret)
+;;      (setq ret (progn ,@body))
+;;      (or (string= oldfont (face-attribute ,face :font))
+;; 	 (set-face-attribute ,face nil :font oldfont))
+;;      ret))
+
+;; (save-font-excursion 'default
+;; 		     (color-theme-emacs-nw))

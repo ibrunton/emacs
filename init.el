@@ -92,6 +92,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(color-theme-legal-frame-parameters "\\(color\\|mode\\)$")
  '(delete-selection-mode nil)
  '(face-font-family-alternatives (quote (("courier" "fixed") ("courier" "CMU Typewriter Text" "fixed") ("Sans Serif" "helv" "helvetica" "arial" "fixed") ("helv" "helvetica" "arial" "fixed"))))
  '(mark-even-if-inactive t)
@@ -104,7 +105,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :foreground "LightGray" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Courier 10 Pitch"))))
+ '(default ((t (:inherit nil :stipple nil :foreground "LightGray" :background "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Courier New"))))
  '(font-lock-comment-face ((t (:foreground "#ff8c00" :slant italic))))
  '(linum ((t (:inherit (shadow default) :foreground "#ff8c00"))))
  '(region ((t (:background "#8899aa" :foreground "black")))))

@@ -4,7 +4,7 @@
   (color-theme-install
     '(color-theme-djcb-dark
        ((foreground-color . "LightGray");;"#a9eadf")
-;;         (background-color . "black") 
+         (background-color . "black") 
          (background-mode . dark))
        (bold ((t (:bold t))))
        (bold-italic ((t (:italic t :bold t))))
