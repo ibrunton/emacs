@@ -81,6 +81,9 @@
 ;; org2blog (wordpress):
 (load-library "idb-org2blog")
 
+;; lua mode (mostly for awesome wm config):
+(load-library "idb-lua")
+
 ;; shell functions:
 ;;(load-library "idb-shell")
 
@@ -97,6 +100,7 @@
  '(face-font-family-alternatives (quote (("courier" "fixed") ("courier" "CMU Typewriter Text" "fixed") ("Sans Serif" "helv" "helvetica" "arial" "fixed") ("helv" "helvetica" "arial" "fixed"))))
  '(mark-even-if-inactive t)
  '(mu-worlds (quote (["FurryMuck" "muck.furry.com" 8888 "guest" "guest"])))
+ '(recentf-save-file "~/.config/recentf")
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))
 
@@ -106,8 +110,8 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :foreground "LightGray" :background "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Courier New"))))
- '(font-lock-comment-face ((t (:foreground "#ff8c00" :slant italic))))
- '(linum ((t (:inherit (shadow default) :foreground "#ff8c00"))))
+ '(font-lock-comment-face ((t (:foreground "#ff8c00" :background "black" :slant italic))))
+ '(linum ((t (:inherit (shadow default) :foreground "#ff8c00" :background "black" ))))
  '(region ((t (:background "#8899aa" :foreground "black")))))
 
 
