@@ -1,0 +1,11 @@
+/* $1 */
+/* by Ian Brunton <iandbrunton@gmail.com> */
+/* `(my-datestamp)` */
+
+#include <stdio.h>
+
+
+int main (int argc, char *argv[])
+{
+  $0
+}

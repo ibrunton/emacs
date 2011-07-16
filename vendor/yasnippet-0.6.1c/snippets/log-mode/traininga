@@ -1,0 +1,17 @@
+${1:t}:	Squat warm-up: $2
+${3:t}:	SQUAT: ${4:190}# * 5 * 5. R=90s.
+	to ${5:t}
+
+${6:t}:	Bench Press warm-up: $7
+${8:t}:	BENCH PRESS: ${9:165}# * 5 * 5. R=60s.
+	to ${10:t}
+
+${11:t}:	A1. BACK EXTENSION: 10, 10, 10. R=30s
+	A2. CRUNCH:	    20, 20, 20>. R=30s.
+	to ${12:t}
+
+${13:t}:	BARBELL ROW: ${14:185}#  * 5 * 5. R=60s.
+	to ${15:t}
+
+${16:t}:	SEATED CALF RAISE: ${17:150}# * 5 * 5. R=30s.
+	to ${18:t}

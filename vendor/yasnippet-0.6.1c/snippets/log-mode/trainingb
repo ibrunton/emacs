@@ -1,0 +1,13 @@
+${1:t}:	Deadlift warm-up: $2
+${3:t}:	DEADLIFT: ${4:275}# * 5 * 5. R=90s.
+	to ${5:t}
+
+${6:t}	Vertical Press warm-up: $7
+${8:t}:	VERTICAL PRESS: ${9:105}# * 5 * 5. R=60s.
+	to ${10:t}
+
+${11:t}:	PULL-UP: ${12:bw}  * 5 * 5. R=60s.
+	to ${13:t}
+
+${14:t}:	STANDING CALF RAISE: ${15:225}# * 5 * 5. R=45s.
+	to ${16:t}

@@ -1,0 +1,11 @@
+// ${1:description}
+// by Ian D Brunton <iandbrunton@gmail.com>
+// `(my-datestamp)`
+
+#include <iostream>
+using namespace std;
+
+int main (int argc, char* argv[])
+{
+$0
+}
