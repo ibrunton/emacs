@@ -214,7 +214,7 @@
 
 (defun edit-snippet (which-snippet) ;; 2010-01-31 Sun
   (interactive "sSnippet: ")
-  (find-file (concat "~/.emacs.d/yasnippet-0.6.1c/snippets/text-mode/log-mode/"
+  (find-file (concat "~/.emacs.d/vendor/yasnippet-0.6.1c/snippets/log-mode/"
 		     which-snippet))
   (dym))
 

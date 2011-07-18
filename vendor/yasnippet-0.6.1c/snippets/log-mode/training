@@ -1,10 +1,11 @@
 Location: Absolute Health Club
-Wearing:  ${1:UA}
-Program:  Maximise Your Muscle phase XI: ${2:week.day}
+Wearing:  ${1:UA} trunks, ${2:striped} shorts, Vibrams,
+	  ${3:UA}, ${4:t-shirt}, watch
+Program:  Maximise Your Muscle phase VI: ${5:week.day}
 
-${3:t}:	2 BCAA, 7.5cc glutamine
+${6:t}:	2 BCAA, 7.5cc glutamine
 
-${4:t}:	Warm-up: $0
+${7:t}:	Warm-up: $0
 
 pwo
 
