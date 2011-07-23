@@ -11,7 +11,7 @@
 ;;       (default ((t (nil))))
        
        (font-lock-builtin-face ((t (:italic t :foreground "#a96da0"))))
-       (font-lock-comment-face ((t (:italic t :foreground "#bbbbbb"))))
+       (font-lock-comment-face ((t (:italic t :foreground "#ff8c00"))));;"#ccbeaa"))))
        (font-lock-comment-delimiter-face ((t (:foreground "#666666"))))
        (font-lock-constant-face ((t (:bold t :foreground "#197b6e"))))
        (font-lock-doc-string-face ((t (:foreground "#3041c4"))))

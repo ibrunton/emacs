@@ -86,7 +86,7 @@
 
 ;; shell functions:
 ;;(load-library "idb-shell")
-
+(setq eval-expression-debug-on-error t) 
 ;; -------------------------------------------------------------------
 ;; CUSTOM
 ;; -------------------------------------------------------------------
@@ -104,15 +104,15 @@
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))
 
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :foreground "LightGray" :background "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Courier New"))))
- '(font-lock-comment-face ((t (:foreground "#ff8c00" :background "black" :slant italic))))
- '(linum ((t (:inherit (shadow default) :foreground "#ff8c00" :background "black" ))))
- '(region ((t (:background "#8899aa" :foreground "black")))))
+;; (custom-set-faces
+;;   ;; custom-set-faces was added by Custom.
+;;   ;; If you edit it by hand, you could mess it up, so be careful.
+;;   ;; Your init file should contain only one such instance.
+;;   ;; If there is more than one, they won't work right.
+;;  '(default ((t (:inherit nil :stipple nil :foreground "LightGray" :background "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Courier New"))))
+;;  '(font-lock-comment-face ((t (:foreground "#ff8c00" :background "black" :slant italic))))
+;;  '(linum ((t (:inherit (shadow default) :foreground "#ff8c00" :background "black" ))))
+;;  '(region ((t (:background "#8899aa" :foreground "black")))))
 
 
 ;; -------------------------------------------------------------------
