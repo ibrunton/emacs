@@ -66,12 +66,6 @@
 ;; Recent files:
 (load-library "idb-recentf")
 
-;; Python mode, Pymacs, Ropemacs:
-;;(load-library "idb-python")
-
-;; LaTeX mode:
-;;(load-library "idb-latex")
-
 ;; Wanderlust:
 ;;(load-library "idb-wl")
 
@@ -80,6 +74,19 @@
 
 ;; org2blog (wordpress):
 (load-library "idb-org2blog")
+
+;; -------------------------------------------------------------------
+;; programming languages
+;; -------------------------------------------------------------------
+
+;; Perl mode
+(load-library "idb-perl")
+
+;; Python mode, Pymacs, Ropemacs:
+;;(load-library "idb-python")
+
+;; LaTeX mode:
+;;(load-library "idb-latex")
 
 ;; lua mode (mostly for awesome wm config):
 (load-library "idb-lua")
