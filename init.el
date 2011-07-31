@@ -79,6 +79,9 @@
 ;; programming languages
 ;; -------------------------------------------------------------------
 
+;; C/C++ mode
+(load-library "idb-c")
+
 ;; Perl mode
 (load-library "idb-perl")
 
@@ -132,3 +135,9 @@
 (setq display-time-24hr-format t)
 (display-time)
 ;;(server-start) ;; do I need this with --daemon?
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )

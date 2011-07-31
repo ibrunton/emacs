@@ -17,7 +17,7 @@
 
 (global-set-key [f1] 'goto-line)
 (global-set-key [(shift f1)] 'open-before-line)
-(global-set-key [f2] 'comment-region)
+(global-set-key [f2] 'comment-or-uncomment-region)
 (global-set-key [(shift f2)] 'uncomment-region)
 (global-set-key [f3] 'multi-term)
 (global-set-key [f4] 'writing-buffer)

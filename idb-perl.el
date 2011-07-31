@@ -10,3 +10,8 @@
      (append auto-mode-alist interpreter-mode-alist))
 
 (setq cperl-invalid-face (quote off))
+(setq cperl-autoindent-on-semi t)
+(setq cperl-electric-keywords t)
+(setq cperl-electric-linefeed t)
+(setq cperl-electric-parens nil)
+(setq cperl-hairy t)
