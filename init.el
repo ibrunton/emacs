@@ -114,7 +114,6 @@
  '(face-font-family-alternatives (quote (("courier" "fixed") ("courier" "CMU Typewriter Text" "fixed") ("Sans Serif" "helv" "helvetica" "arial" "fixed") ("helv" "helvetica" "arial" "fixed"))))
  '(mark-even-if-inactive t)
  '(mu-worlds (quote (["FurryMuck" "muck.furry.com" 8888 "guest" "guest"])))
- '(recentf-save-file "~/.config/recentf")
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))
 

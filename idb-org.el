@@ -74,8 +74,8 @@
 (setq org-remember-store-without-prompt t)
 (setq org-remember-templates
       (quote
-       (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n  %u" "~/Dropbox/docs/org/todo.org" "Tasks")
-	("Appointments" ?a "* %?\n %u" "~/Dropbox/docs/org/todo.org" "Appointments")
+       (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/todo.org" "Tasks")
+	("Appointments" ?a "* %?\n" "~/Dropbox/docs/org/todo.org" "Appointments")
 	("Note" ?n "* %u %?" "~/Dropbox/docs/org/notes.org" "Notes")
 ;;	("Bookmark" ?k "* %(insert(buffer-file-name (current-buffer)))%!" "~/Dropbox/docs/org/bookmarks.org" "Bookmarks")
 ;;	("Journal" ?j "* %^{Head Line} %U %^g\n%i%?" "~/Dropbox/docs/org/journal.org")

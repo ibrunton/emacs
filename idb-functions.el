@@ -269,3 +269,14 @@ until I figure out how to prevent it from requiring them in the first place."
   (insert "-*- mode: org; mode: auto-fill; -*-\n\n")
   (org-mode)
   (auto-fill-mode))
+
+;;<2011-08-09 Tue>
+(defun notes-buffer ()
+  (interactive)
+  (switch-to-buffer (get-buffer-create "new"))
+  (insert "-*- mode: auto-fill; -*-\n\n\n\n")
+  (insert "page\t")
+  (insert-char ?- 62)
+  (insert "\n")
+  (auto-fill-mode)
+  (previous-line 3))

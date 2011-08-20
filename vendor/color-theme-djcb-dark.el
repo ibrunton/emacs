@@ -4,7 +4,7 @@
   (color-theme-install
     '(color-theme-djcb-dark
        ((foreground-color . "LightGray");;"#a9eadf")
-         (background-color . "black") 
+         (background-color . "black")
          (background-mode . dark))
        (bold ((t (:bold t))))
        (bold-italic ((t (:italic t :bold t))))
@@ -20,7 +20,7 @@
        (font-lock-function-name-face ((t (:foreground "#578fc2"))));356da0"))))
        (font-lock-keyword-face ((t (:bold t :foreground "#bcf0f1"))))
        (font-lock-preprocessor-face ((t (:foreground "#e3ea94"))))
-       (font-lock-string-face ((t (:foreground "#ffffff"))))
+       (font-lock-string-face ((t (:foreground "#b3afff"))))
        (font-lock-type-face ((t (:bold t :foreground "#364498"))))
        (font-lock-variable-name-face ((t (:foreground "#7685de"))))
        (font-lock-warning-face ((t (:bold t :italic nil :underline nil 
@@ -28,5 +28,4 @@
        (hl-line ((t (:background "#112233"))))
        (mode-line ((t (:foreground "#ffffff" :background "#333333"))))
        (region ((t (:foreground nil :background "#555555"))))
-       (show-paren-match-face ((t (:bold t :foreground "#ffffff" 
-                                    :background "#050505")))))))
+       (show-paren-match-face ((t (:bold t :foreground "#ffffff")))))))
