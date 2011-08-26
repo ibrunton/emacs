@@ -93,7 +93,7 @@
 ;;(load-library "idb-python")
 
 ;; LaTeX mode:
-;;(load-library "idb-latex")
+(load-library "idb-latex")
 
 ;; lua mode (mostly for awesome wm config):
 (load-library "idb-lua")
@@ -109,6 +109,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ ;; '(c-tab-always-indent (quote other))
  '(color-theme-legal-frame-parameters "\\(color\\|mode\\)$")
  '(delete-selection-mode nil)
  '(face-font-family-alternatives (quote (("courier" "fixed") ("courier" "CMU Typewriter Text" "fixed") ("Sans Serif" "helv" "helvetica" "arial" "fixed") ("helv" "helvetica" "arial" "fixed"))))
