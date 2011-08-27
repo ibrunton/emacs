@@ -26,6 +26,6 @@
        (font-lock-warning-face ((t (:bold t :italic nil :underline nil 
                                      :foreground "yellow"))))
        (hl-line ((t (:background "#112233"))))
-       (mode-line ((t (:foreground "#ffffff" :background "#333333"))))
+       (mode-line ((t (:foreground "#17d193" :background "#000000"))))
        (region ((t (:foreground nil :background "#555555"))))
        (show-paren-match-face ((t (:bold t :foreground "#ffffff")))))))
