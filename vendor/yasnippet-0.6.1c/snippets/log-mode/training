@@ -1,9 +1,10 @@
 Location: Absolute Health Club
 Wearing:  ${1:UA} trunks, ${2:striped} shorts, Vibrams,
 	  ${3:UA, }${4:t-shirt}, watch
-Program:  SUPER HERO WORKOUT phase II: ${5:day}
+Program:  LIFTING: Maximise Your Muscle phase I: ${5:day}
 
-${6:t}:	2 BCAA, 7.5cc glutamine
+${6:t}:	3 Allmax Aminocore BCAA tablets
+
 
 ${7:t}:	Warm-up: $0
 

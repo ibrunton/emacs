@@ -11,11 +11,15 @@
 	      tab-width 4
 	      indent-tabs-mode t)
 
+;; C-c o to find related .h/.c file
+(add-hook 'c-mode-common-hook
+  (lambda() 
+    (local-set-key  (kbd "C-c o") 'ff-find-other-file)))
+
+;; key for compiling:
 (eval-after-load 'cc-mode
   '(define-key c-mode-map (kbd "C-<f12>") 'compile))
-
-;; because the above doesn't work in terminal, and C-c C-c is bound to
-;; comment-region which I have elsewhere bound to F2 anyway:
+;; because the above doesn't work in terminal:
 (eval-after-load 'cc-mode
   '(define-key c-mode-map (kbd "C-c C-c") 'compile))
 

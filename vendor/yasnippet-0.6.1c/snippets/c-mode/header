@@ -1,0 +1,14 @@
+/*
+ *       Filename:  ${1:filename}
+ *
+ *    Description:  ${2:description}
+ *
+ *        Version:  1.0
+ *        Created:  `(my-datestamp)`
+ *       Compiler:  gcc
+ *
+ *         Author:  Ian D Brunton (ib), iandbrunton@gmail.com
+ *
+ */
+
+$0

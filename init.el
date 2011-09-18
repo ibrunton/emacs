@@ -79,6 +79,9 @@
 ;; org2blog (wordpress):
 (load-library "idb-org2blog")
 
+;; deft
+(load-library "idb-deft")
+
 ;; -------------------------------------------------------------------
 ;; programming languages
 ;; -------------------------------------------------------------------

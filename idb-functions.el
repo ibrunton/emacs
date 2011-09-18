@@ -280,3 +280,20 @@ until I figure out how to prevent it from requiring them in the first place."
   (insert "\n")
   (auto-fill-mode)
   (previous-line 3))
+
+;;<2011-08-27 Sat>
+(defun transbg ()
+  (interactive)
+  (set-face-attribute 'default nil :background "unspecified-bg"))
+
+;;<2011-09-18 Sun>
+(defun minutes ()
+  (interactive)
+  (find-file (concat "~/Dropbox/DevDigLit/Sept-2011/meeting_minutes/"
+					 (format-time-string "%Y-%m-%d")
+					 ".txt"))
+  (insert "-*- mode: auto-fill; -*-\n\n")
+  (insert "Developing Digital Literacy\n")
+  (insert (format-time-string "%A, %d %B, %Y"))
+  (insert "\nAttendance: ")
+  (auto-fill-mode))
