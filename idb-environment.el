@@ -32,6 +32,7 @@
 
 ;; Auto-fill text files:
 ;(setq text-mode-hook 'turn-on-auto-fill)
+(setq-default fill-column 80)
 
 ;; Current line and column number in mode line
 (global-linum-mode t)

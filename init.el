@@ -40,6 +40,8 @@
 
 (require 'tumble)
 
+(require 'wc)
+
 ;;(require 'mu)
 
 ;;(require 'vc-git)
@@ -81,6 +83,9 @@
 
 ;; deft
 (load-library "idb-deft")
+
+;; markdown
+(load-library "idb-markdown")
 
 ;; -------------------------------------------------------------------
 ;; programming languages

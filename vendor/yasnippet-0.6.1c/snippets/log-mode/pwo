@@ -1,2 +1,2 @@
-${1:t}:	${3:1} scoop Blue Star protein powder, ${4:50}g maltodextrin,
-	7.5cc creatine, 7.5cc glutamine, 1000mg vitamin C
+${1:t}:	${3:1} scoop Blue Star protein powder, \$s${4:50}g maltodextrin\$,
+	\$s7.5cc creatine, 7.5cc glutamine, 1000mg vitamin C\$

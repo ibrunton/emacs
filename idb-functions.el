@@ -266,7 +266,7 @@ until I figure out how to prevent it from requiring them in the first place."
 (defun writing-buffer ()
   (interactive)
   (switch-to-buffer (get-buffer-create "new"))
-  (insert "-*- mode: org; mode: auto-fill; -*-\n\n")
+  (insert "-*- mode: org; mode: auto-fill; fill-column: 80; -*-\n\n")
   (org-mode)
   (auto-fill-mode))
 
@@ -297,3 +297,4 @@ until I figure out how to prevent it from requiring them in the first place."
   (insert (format-time-string "%A, %d %B, %Y"))
   (insert "\nAttendance: ")
   (auto-fill-mode))
+
