@@ -298,3 +298,10 @@ until I figure out how to prevent it from requiring them in the first place."
   (insert "\nAttendance: ")
   (auto-fill-mode))
 
+;;<2011-10-27 Thu>
+(defun match-paren (arg)
+  "Go to the matching paren if on a paren; otherwise insert %."
+  (interactive "p")
+  (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
+		((looking-at "\\s\)") (forward-char 1) (backward-list 1))
+		(t (self-insert-command (or arg 1)))))
