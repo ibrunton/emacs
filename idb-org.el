@@ -76,6 +76,7 @@
       (quote
        (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/todo.org" "Tasks")
 		("School Task" ?s "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/school.org" "Tasks")
+		("ILL" ?i "* ILL %?\n" "~/Dropbox/docs/org/school.org" "ILLs")
 		("Long-term Task" ?l "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/longterm.org" "Tasks")
 		("Appointments" ?a "* %?\n" "~/Dropbox/docs/org/todo.org" "Appointments")
 		("Note" ?n "* %u %?" "~/Dropbox/docs/org/notes.org" "Notes")
