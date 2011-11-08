@@ -45,6 +45,9 @@
 ;; don't make backup files
 (setq make-backup-files nil)
 
+;; don't make auto-save files
+(setq auto-save-default nil)
+
 ;; No menu bar or toolbar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))

@@ -1,7 +1,7 @@
 Location: Absolute Health Club
 Wearing:  ${1:UA} trunks, ${2:striped} shorts, Vibrams,
 	  ${3:UA, }${4:t-shirt}, watch
-Program:  LIFTING: Maximise Your Muscle phase V: ${5:day}
+Program:  LIFTING: 1000-Rep Challenge (modified): ${5:day}
 
 ${6:t}:	Warm-up: $0
 
