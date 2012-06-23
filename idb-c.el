@@ -7,9 +7,9 @@
 ;;   (define-key c-mode-map (kbd "C-<f12>") 'compile))
 ;; (add-hook 'c-initialization-hook 'my-c-mode-common-hook)
 
-(setq-default c-basic-offset 4
-	      tab-width 4
-	      indent-tabs-mode t)
+;; (setq-default c-basic-offset 4
+;; 	      tab-width 4
+;; 	      indent-tabs-mode t)
 
 ;; C-c o to find related .h/.c file
 (add-hook 'c-mode-common-hook

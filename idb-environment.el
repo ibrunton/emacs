@@ -117,7 +117,7 @@
 (color-theme-djcb-dark)
 
 ;; for transparent background in terminal:
-(set-face-attribute 'default nil :background "unspecified-bg")
+;;(set-face-attribute 'default nil :background "unspecified-bg")
 
 ;; (defmacro save-font-excursion (face &rest body)
 ;;   "Save the :font property of given FACE during the execution of BODY."

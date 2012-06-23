@@ -19,7 +19,7 @@
 (global-set-key [(shift f1)] 'open-before-line)
 (global-set-key [f2] 'comment-or-uncomment-region)
 (global-set-key [(shift f2)] 'uncomment-region)
-(global-set-key [f3] 'notes-buffer)
+(global-set-key [f3] 'deft)
 (global-set-key [f4] 'writing-buffer)
 (global-set-key [(shift f4)] 'org2blog/wp-new-entry)
 ;;(global-set-key [(shift f4)] 'wrap-all-lines)

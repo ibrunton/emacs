@@ -87,6 +87,9 @@
 ;; markdown
 (load-library "idb-markdown")
 
+;; diary/calendar
+(load-library "idb-diary")
+
 ;; -------------------------------------------------------------------
 ;; programming languages
 ;; -------------------------------------------------------------------
@@ -98,7 +101,7 @@
 (load-library "idb-perl")
 
 ;; Python mode, Pymacs, Ropemacs:
-;;(load-library "idb-python")
+(load-library "idb-python")
 
 ;; LaTeX mode:
 (load-library "idb-latex")
@@ -153,3 +156,4 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
+(put 'dired-find-alternate-file 'disabled nil)

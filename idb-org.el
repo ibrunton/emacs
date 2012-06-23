@@ -61,6 +61,7 @@
 			 (org-agenda-overriding-header "Unscheduled TODO entries: "))))))
 
 (setq org-agenda-files (quote ("~/Dropbox/docs/org/todo.org" "~/Dropbox/docs/org/school.org")))
+(setq org-agenda-include-diary t)
 (setq org-agenda-ndays 7)
 (setq org-agenda-show-all-dates t)
 (setq org-agenda-skip-deadline-if-done t)

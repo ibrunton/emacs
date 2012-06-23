@@ -9,6 +9,7 @@
            (setcdr pair 'cperl-mode)))
      (append auto-mode-alist interpreter-mode-alist))
 
+(setq cperl-indent-level 4)
 (setq cperl-invalid-face (quote off))
 (setq cperl-autoindent-on-semi t)
 (setq cperl-electric-keywords t)

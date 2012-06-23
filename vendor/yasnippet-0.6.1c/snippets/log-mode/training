@@ -1,8 +1,5 @@
-Location: Absolute Health Club
+Location: Abs-O-Lute Health Club
 Wearing:  ${1:UA} trunks, ${2:striped} shorts, Vibrams,
 	  ${3:UA, }${4:t-shirt}, watch
-Program:  LIFTING: 1000-Rep Challenge (modified): ${5:day}
+Program:  LIFTING: HERO WORKOUT ${5:day}
 
-${6:t}:	Warm-up: $0
-
-pwo

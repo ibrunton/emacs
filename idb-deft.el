@@ -9,4 +9,4 @@
    deft-directory "~/Dropbox/docs/deft/"
    deft-text-mode 'org-mode
    deft-auto-save-interval 10.0)
-  (global-set-key (kbd "<f9>") 'deft))
+  )
