@@ -35,8 +35,8 @@
 (add-hook 'remember-mode-hook 'org-remember-apply-template)
 
 ;;(define-key global-map [(shift f8)] 'remember)
-(global-set-key [(control meta ?r)] 'remember)
-(global-set-key "\M-R" 'remember)
+(global-set-key [(control meta ?r)] 'org-capture)
+(global-set-key "\M-R" 'org-capture)
 
 ;; These Org/Remember settings changed from custom-set-variables to setq
 ;; 2010-01-13
@@ -73,7 +73,7 @@
 (setq org-directory "~/Dropbox/docs/org/")
 (setq org-fast-tag-selection-single-key (quote expert))
 (setq org-remember-store-without-prompt t)
-(setq org-remember-templates
+(setq org-remember-templates ;; deprecated
       (quote
        (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/todo.org" "Tasks")
 		("School Task" ?s "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/school.org" "Tasks")
@@ -89,6 +89,17 @@
 		("Birthday" ?b "* %^{Name} :birthday:\n  SCHEDULED: %t%? " "~/Dropbox/docs/org/todo.org" "Birthdays")
 		("Movies" ?m "* %^{Title} %t%?" "~/Dropbox/docs/org/movies.org" "Movies")
 		)))
+
+(setq org-capture-templates
+      '(("t" "Task" entry (file+headline "~/Dropbox/docs/org/todo.org" "Tasks") "* TODO %?\n  SCHEDULED: %t")
+	("s" "School Task" entry (file+headline "~/Dropbox/docs/org/school.org" "Tasks") "* TODO %?\n  SCHEDULED: %t")
+	("i" "ILL" entry (file+headline "~/Dropbox/docs/org/school.org" "ILLs") "* ILL %?")
+	("l" "Long-term Task" entry (file+headline "~/Dropbox/docs/org/longterm.org" "Tasks") "* TODO %?\n  SCHEDULED: %t")
+	("a" "Appointments" entry (file+headline "~/Dropbox/docs/org/todo.org" "Appointments") "* %?")
+	("n" "Note" entry (file+headline "~/Dropbox/docs/org/notes.org" "Notes") "* %u %?")
+	("r" "Reading" entry (file+headline "~/Dropbox/docs/org/reading.org" "Reading") "* %^{Title} %t%?")
+	("b" "Birthday" entry (file+headline "~/Dropbox/docs/org/todo.org" "Birthdays") "* %^{Name} :birthday:\n  SCHEDULED: %t%? ")
+	("m" "Movies" entry (file+headline "~/Dropbox/docs/org/movies.org" "Movies") "* %^{Title} %t%?")))
 
 (setq remember-annotation-functions (quote (org-remember-annotation)))
 (setq remember-handler-functions (quote (org-remember-handler)))

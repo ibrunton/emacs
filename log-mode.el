@@ -40,10 +40,9 @@
 (define-generic-mode log-mode
   '(";;") ; comment line
   '(;"Weight" "Breakfast"
-    "Nap" "Work" "XXXX" ;"Walk" "Plug" "chastity device"
+    "Nap" "Work" "XXXX" ;"Walk"
     "Itchy Belly Spot" "Itchy Spot"
 ;;    "greens+" "Coffee" "Tribex"
-;;    "Doug" "Andrechek"
     "Mike" "Mikey" "Butler"
     ;; Islamic prayers:
     "Fajr" "Dhuhr" "Asr" "Maghrib" "Isha" "Witr" "Qunut" "Tasbih" "Salat"
@@ -55,8 +54,11 @@
     "Farscape" "CSI"
 ) ; keywords
   '(("\\(\\$t\\)\\(.*?\\)\\(\\$\\)" (1 'log-mode-bob-face)
-				     (2 'log-mode-training-face)
-				     (3 'log-mode-bob-face))
+     (2 'log-mode-training-face)
+     (3 'log-mode-bob-face))
+    ("\\(\\$s\\)\\(.*?\\)\\(\\$\\)" (1 'log-mode-bob-face)
+     (2 'log-mode-training-face)
+     (3 'log-mode-bob-face))
     ("\\(\\$h\\)\\(.*?\\)\\(\\$\\)" (1 'log-mode-bob-face)
      (2 'log-mode-headache-face)
      (3 'log-mode-bob-face))
@@ -224,7 +226,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
   (find-file training-file)
   (unless (file-exists-p training-file)
       (insert (concat (format-time-string "%A, %d %B, %Y") "\n\ntraining"))
-      (append-to-file ";;\tTRAINING FILE CREATED -------------------------------------\n"
+      (append-to-file ";;\t.TRAINING file created\n"
 		      nil (concat idb-root-dir "Dropbox/docs/log/"
 				  (format-time-string "%Y/%m/%d")))
 
@@ -336,7 +338,7 @@ If passed &optional nogotoend, do not move point to the end of the file. Otherwi
   (find-file log-journal-file)
   (goto-char (point-max))
   (unless (file-exists-p log-journal-file)
-    (append-to-file ";;\tJOURNAL FILE CREATED --------------------------------------\n"
+    (append-to-file ";;\t.JOURNAL file created\n"
 		    nil (concat idb-root-dir "Dropbox/docs/log/"
 				(format-time-string "%Y/%m/%d")))
     (insert (format-time-string "%A, %d %B, %Y")))
