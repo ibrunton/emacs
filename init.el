@@ -38,7 +38,7 @@
 
 (require 'log-mode)
 
-(require 'tumble)
+(require 'tumblr-mode)
 
 (require 'wc)
 
@@ -112,6 +112,10 @@
 ;; shell functions:
 ;;(load-library "idb-shell")
 (setq eval-expression-debug-on-error t) 
+
+;; indentation
+;;(load-library "idb-indent")
+
 ;; -------------------------------------------------------------------
 ;; CUSTOM
 ;; -------------------------------------------------------------------

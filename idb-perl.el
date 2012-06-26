@@ -16,3 +16,7 @@
 (setq cperl-electric-linefeed t)
 (setq cperl-electric-parens nil)
 (setq cperl-hairy t)
+
+(add-hook 'cperl-mode-common-hook
+	'(lambda ()
+	   (setq tab-width 4)))

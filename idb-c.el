@@ -11,10 +11,11 @@
 ;; 	      tab-width 4
 ;; 	      indent-tabs-mode t)
 
-;; C-c o to find related .h/.c file
 (add-hook 'c-mode-common-hook
-  (lambda() 
-    (local-set-key  (kbd "C-c o") 'ff-find-other-file)))
+  '(lambda() 
+     ;; C-c o to find related .h/.c file
+    (local-set-key  (kbd "C-c o") 'ff-find-other-file)
+    (setq tab-width 4)))
 
 ;; key for compiling:
 (eval-after-load 'cc-mode
