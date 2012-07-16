@@ -30,6 +30,9 @@
 ;; various functions:
 (load-library "idb-functions")
 
+;; aliases
+(load-library "idb-aliases")
+
 ;; -------------------------------------------------------------------
 ;; libraries loaded as-is, without customisations
 ;; -------------------------------------------------------------------

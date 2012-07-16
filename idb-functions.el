@@ -305,3 +305,16 @@ until I figure out how to prevent it from requiring them in the first place."
   (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
 		((looking-at "\\s\)") (forward-char 1) (backward-list 1))
 		(t (self-insert-command (or arg 1)))))
+
+;;<2012-07-12 Thu>
+(defun maildraft (recipient)
+  (interactive "sRecipient: ")
+  (find-file (concat "~/docs/drafts/"
+		     (format-time-string "%Y-%m-%d-")
+		     recipient))
+  (auto-fill-mode))
+
+;;<2012-07-13 Fri>
+(defun load-passwords ()
+  (interactive)
+  (load-library "passwords"))
