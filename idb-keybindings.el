@@ -46,6 +46,8 @@
 
 (global-set-key "\C-xt" 'insert-tab)
 
+(global-set-key "\C-ca" 'org-agenda)
+
 ;; Use home/end to go to beginning/end of file, not line;
 ;; because ^A/^E are easy to hit but M-<> are not
 (global-set-key [home] 'beginning-of-buffer)

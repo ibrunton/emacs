@@ -31,7 +31,7 @@
 (load-library "idb-functions")
 
 ;; aliases
-(load-library "idb-aliases")
+(load-library "idb-alias")
 
 ;; -------------------------------------------------------------------
 ;; libraries loaded as-is, without customisations
