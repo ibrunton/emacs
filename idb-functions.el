@@ -317,4 +317,4 @@ until I figure out how to prevent it from requiring them in the first place."
 ;;<2012-07-13 Fri>
 (defun load-passwords ()
   (interactive)
-  (load-library "passwords"))
+  (load-library "idb-passwords"))
