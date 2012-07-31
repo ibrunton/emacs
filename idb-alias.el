@@ -7,3 +7,4 @@
 (defalias 'regel 'eval-region)
 (defalias 'tnp 'tumblr-new-post)
 (defalias 'tsp 'tumblr-save-post)
+(defalias 'spellcheck 'ispell)
