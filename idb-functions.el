@@ -318,3 +318,29 @@ until I figure out how to prevent it from requiring them in the first place."
 (defun load-passwords ()
   (interactive)
   (load-library "idb-passwords"))
+
+;;<2012-08-08 Wed>
+(defun add-nocite-prompt (key)
+  "Prompts for a BibTex key.  If that key does not already exist in the file
+nocite-file, add-nocite-prompt appends a \nocite{} instruction to that file."
+  (interactive "sBibTex Key: ")
+  (unless (boundp 'nocite-file)
+    (setq nocite-file (read-from-minibuffer "Define nocite-file: ")))
+  (setq nocite-string (concat "\\nocite{" key "}\n"))
+  (with-current-buffer (find-file-noselect nocite-file)
+    (goto-char (point-min))
+    (if (search-forward nocite-string nil t)
+	(kill-buffer)
+      (progn
+	(goto-char (point-max))
+	(insert nocite-string)
+	(save-buffer)))))
+
+;;<2012-10-20 Sat>
+(defun goscratch ()
+  (interactive)
+  (switch-to-buffer "*scratch*"))
+
+(defun save-recentf-list ()
+  (interactive)
+)

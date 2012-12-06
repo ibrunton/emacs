@@ -75,6 +75,10 @@
   (add-to-list 'default-frame-alist (cons 'width 82)))
 (set-frame-size)
 
+;; save recent files on exit
+;;(add-hook 'kill-emacs-hook 'recentf-save-list)
+
+
 ;;(add-to-list 'default-frame-alist (cons 'font "Courier New"))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Cursor

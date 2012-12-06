@@ -60,7 +60,7 @@
 			     (quote regexp) "<[^>\n]+>")))
 			 (org-agenda-overriding-header "Unscheduled TODO entries: "))))))
 
-(setq org-agenda-files (quote ("~/Dropbox/docs/org/todo.org" "~/Dropbox/docs/org/school.org")))
+(setq org-agenda-files (quote ("~/Dropbox/docs/org/todo.org")))
 (setq org-agenda-include-diary t)
 (setq org-agenda-ndays 7)
 (setq org-agenda-show-all-dates t)
@@ -76,8 +76,8 @@
 (setq org-remember-templates ;; deprecated
       (quote
        (("Task" ?t "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/todo.org" "Tasks")
-		("School Task" ?s "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/school.org" "Tasks")
-		("ILL" ?i "* ILL %?\n" "~/Dropbox/docs/org/school.org" "ILLs")
+		("School Task" ?s "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/todo.org" "School")
+		("ILL" ?i "* ILL %?\n" "~/Dropbox/docs/org/todo.org" "ILLs")
 		("Long-term Task" ?l "* TODO %?\n  SCHEDULED: %t\n" "~/Dropbox/docs/org/longterm.org" "Tasks")
 		("Appointments" ?a "* %?\n" "~/Dropbox/docs/org/todo.org" "Appointments")
 		("Note" ?n "* %u %?" "~/Dropbox/docs/org/notes.org" "Notes")
@@ -92,8 +92,8 @@
 
 (setq org-capture-templates
       '(("t" "Task" entry (file+headline "~/Dropbox/docs/org/todo.org" "Tasks") "* TODO %?\n  SCHEDULED: %t")
-	("s" "School Task" entry (file+headline "~/Dropbox/docs/org/school.org" "Tasks") "* TODO %?\n  SCHEDULED: %t")
-	("i" "ILL" entry (file+headline "~/Dropbox/docs/org/school.org" "ILLs") "* ILL %?")
+	("s" "School Task" entry (file+headline "~/Dropbox/docs/org/todo.org" "School") "* TODO %?\n  SCHEDULED: %t")
+	("i" "ILL" entry (file+headline "~/Dropbox/docs/org/todo.org" "ILLs") "* ILL %?")
 	("l" "Long-term Task" entry (file+headline "~/Dropbox/docs/org/longterm.org" "Tasks") "* TODO %?\n  SCHEDULED: %t")
 	("a" "Appointments" entry (file+headline "~/Dropbox/docs/org/todo.org" "Appointments") "* %?")
 	("n" "Note" entry (file+headline "~/Dropbox/docs/org/notes.org" "Notes") "* %u %?")

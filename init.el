@@ -21,6 +21,9 @@
 ;; GUI, other visual behaviours:
 (load-library "idb-environment")
 
+;; Icicles
+;;(load-library "idb-icicles")
+
 ;; keybindings:
 (load-library "idb-keybindings")
 
@@ -123,16 +126,17 @@
 ;; CUSTOM
 ;; -------------------------------------------------------------------
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- ;; '(c-tab-always-indent (quote other))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(color-theme-legal-frame-parameters "\\(color\\|mode\\)$")
  '(delete-selection-mode nil)
  '(face-font-family-alternatives (quote (("courier" "fixed") ("courier" "CMU Typewriter Text" "fixed") ("Sans Serif" "helv" "helvetica" "arial" "fixed") ("helv" "helvetica" "arial" "fixed"))))
  '(mark-even-if-inactive t)
  '(mu-worlds (quote (["FurryMuck" "muck.furry.com" 8888 "guest" "guest"])))
+ '(org-agenda-files (quote ("~/Dropbox/docs/org/todo.org")))
+ '(recentf-auto-cleanup (quote never))
  '(scroll-bar-mode (quote right))
  '(transient-mark-mode 1))
 
@@ -158,9 +162,9 @@
 (display-time)
 ;;(server-start) ;; do I need this with --daemon?
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
 (put 'dired-find-alternate-file 'disabled nil)

@@ -25,7 +25,7 @@
 ;;(global-set-key [(shift f4)] 'wrap-all-lines)
 
 (global-set-key [f5] 'initel)
-;;(global-set-key [f6] 'edit-log-mode)
+(global-set-key [f6] 'goscratch)
 (global-set-key [f7] 'eval-buffer)
 (global-set-key [(shift f7)] 'eval-region)
 (global-set-key [f8] 'auto-fill-mode) ;; toggles on/off

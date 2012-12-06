@@ -1,0 +1,8 @@
+@book {$1,
+	author		= {$2},
+	title		= {$3},
+	publisher	= {$4},
+	location	= {$5},
+	year		= $7,
+	howpublished	= {Print}
+}
