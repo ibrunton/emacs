@@ -284,7 +284,8 @@ until I figure out how to prevent it from requiring them in the first place."
 ;;<2011-08-27 Sat>
 (defun transbg ()
   (interactive)
-  (set-face-attribute 'default nil :background "unspecified-bg"))
+  (set-face-attribute 'default nil :background nil)
+)
 
 ;;<2011-09-18 Sun>
 (defun minutes ()

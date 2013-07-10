@@ -21,6 +21,9 @@
 ;; Dont show the GNU splash screen
 (setq inhibit-startup-message t)
 
+;; Don't show initial message in scratch buffer
+(setq initial-scratch-message ";; Welcome to EMACS!")
+
 ;; Don't beep, but flash
 (setq visible-bell t)
 
@@ -52,6 +55,7 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(scroll-bar-mode -1)
 
 ;; titlebar = buffer unless filename
 (setq frame-title-format '(buffer-file-name "%f" ("%b")))

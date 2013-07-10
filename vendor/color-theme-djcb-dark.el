@@ -4,7 +4,7 @@
   (color-theme-install
     '(color-theme-djcb-dark
        ((foreground-color . "LightGray");;"#a9eadf")
-         (background-color . "#000000")
+         (background-color . nil)
          (background-mode . dark))
        (bold ((t (:bold t))))
        (bold-italic ((t (:italic t :bold t))))
@@ -26,6 +26,6 @@
        (font-lock-warning-face ((t (:bold t :italic nil :underline nil 
                                      :foreground "yellow"))))
        (hl-line ((t (:background "#112233"))))
-       (mode-line ((t (:foreground "#17d193" :background "#000000"))))
+       (mode-line ((t (:foreground "#17d193" :background "#1d1f21"))))
        (region ((t (:foreground nil :background "#555555"))))
        (show-paren-match-face ((t (:bold t :foreground "#ffffff")))))))

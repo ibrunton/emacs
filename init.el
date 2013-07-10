@@ -73,7 +73,7 @@
 (load-library "idb-org")
 
 ;; YASnippet:
-(load-library "idb-yasnippet")
+;;(load-library "idb-yasnippet")
 
 ;; Recent files:
 (load-library "idb-recentf")
@@ -112,8 +112,11 @@
 ;; LaTeX mode:
 (load-library "idb-latex")
 
+;; Slime/LISP:
+(load-library "idb-slime")
+
 ;; lua mode (mostly for awesome wm config):
-(load-library "idb-lua")
+;;(load-library "idb-lua")
 
 ;; shell functions:
 ;;(load-library "idb-shell")
